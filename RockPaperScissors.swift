@@ -26,14 +26,14 @@ var play: [String:String] = [
 
 var input: String?
 
-var userInput: String
+var userInput: String = ""
 var compInput: String
 var result = ""
         
 
 
 //get valid input
-while true {
+while userInput == "" {
 	print("Rock, Scissors, Paper?\nUser:")
     	input = readLine(strippingNewline: true)
 	//if valid input 
